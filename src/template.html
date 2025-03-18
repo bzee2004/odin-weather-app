@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 style="text-align:center; margin-top:50px">Webpack Template</h1>
+    <!-- <button id="get-location">Get Current Location</button> -->
+
+    <dialog id="loader">
+        <div class="load-circle-box">
+            <img src="/assets/loading.png" alt="loading...">
+        </div>
+    </dialog>
+
+    <nav>
+        <form id="get-location">
+            <label for="location">Search by city/state:</label>
+            <input type="text" name="location" id='location' required>
+            <input type="submit">
+        </form>
+    </nav>
+
+    <section class="content-box">
+
+        <header class="locality">
+            <!-- City, State -->
+        </header>
+
+        <section class="weather">
+
+            <article class="weather-box conditions">
+                <!-- icon -->
+                <!-- condition -->
+                <!-- current temp -->
+                <!-- H: high, L: low -->
+            </article>
+            
+            <article class="weather-box alerts">
+                <!-- alerts -->
+            </article>
+
+            <section class="weather-box forecast-weather">
+                <h1>Weather Forecast</h1>
+                <article class="forecast-conditions">
+                    <!-- icon -->
+                    <!-- current temp -->
+                    <!-- high and low -->
+                    <!-- rain prob -->
+                </article>
+            </section>
+
+
+            <article class="weather-box feels-like">
+                <!-- cur, max, min -->
+                <!-- humidity -->
+            </article>
+    
+            <article class="weather-box precipitation">
+                <!-- cur, prob -->
+            </article>
+    
+            <article class="weather-box wind">
+                <!-- speed, dir, gust -->
+            </article>
+    
+            <article class="weather-box sun-states">
+                <!-- sunrise, sunset -->
+            </article>
+
+        </section>
+
+    </section>
 </body>
 </html>
